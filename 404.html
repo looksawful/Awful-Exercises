@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moved to SEA</title>
+  <meta http-equiv="refresh" content="0; url=https://looksawful.github.io/SEA/">
+  <script>
+    (function () {
+      var fromBase = "/Awful-Exercises";
+      var toBase = "/SEA";
+      var path = window.location.pathname || "/";
+      if (path.indexOf(fromBase) === 0) path = path.slice(fromBase.length) || "/";
+      var target = "https://looksawful.github.io" + toBase + path + window.location.search + window.location.hash;
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>This site moved to <a id="sea-link" href="https://looksawful.github.io/SEA/">SEA</a>.</p>
+  <script>
+    (function () {
+      var fromBase = "/Awful-Exercises";
+      var toBase = "/SEA";
+      var path = window.location.pathname || "/";
+      if (path.indexOf(fromBase) === 0) path = path.slice(fromBase.length) || "/";
+      var target = "https://looksawful.github.io" + toBase + path + window.location.search + window.location.hash;
+      var link = document.getElementById("sea-link");
+      if (link) link.href = target;
+    })();
+  </script>
+</body>
+</html>
